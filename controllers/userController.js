@@ -16,7 +16,8 @@ module.exports = {
     getSingleUser(req, res) {
         User.findOne({ _id: req.params.userId })
             .select('_id username email friendCount')
-            .populate({ path: 'thoughts', select: '_id thoughtText username createdAt reactions __v reactionCount', populate: { path: 'thoughts.reactions', select: 'reactionId createdAt _id reactionBody username', populate: { path: 'friends', select: 'thoughts friends _id username email __v friendCount' } } })
+            .populate({ path: 'thoughts', select: '_id thoughtText username createdAt reactions __v reactionCount', populate: { path: 'reactions', select: 'reactionId createdAt _id reactionBody username' } })
+            .populate({ path: 'friends', select: 'thoughts friends _id username email __v friendCount' })
             .then(user => {
                 console.log("user: ", user);
                 !user ? res.status(404).json({ message: 'No user with that ID' }) : res.json(user);
