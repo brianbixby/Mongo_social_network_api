@@ -278,3 +278,6 @@ You are required to submit BOTH of the following for review:
 
 ---
 © 2022 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
+
+https://watch.screencastify.com/v/B5RZlQL6L1LtQNNXl1ry
+https://watch.screencastify.com/v/76QJVv7YRPiDtfcl57p5
