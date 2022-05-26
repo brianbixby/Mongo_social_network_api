@@ -1,221 +1,30 @@
-const data = [
-    {
-        username: 'aaaaa', email: 'aaaaa@aaaaa.com', thoughts: [
-            { thoughtText: "thoughtText aaaaa", username: 'aaaaa', reactions: [] }
-        ]
-    },
-    {
-        username: 'bbbbb', email: 'bbbbb@bbbbb.com', thoughts: [
-            { thoughtText: "thoughtText bbbbb", username: 'bbbbb', reactions: [] }
-        ]
-    },
-    {
-        username: 'ccccc', email: 'ccccc@ccccc.com', thoughts: [
-            { thoughtText: "thoughtText ccccc", username: 'ccccc', reactions: [] }
-        ]
-    },
-    {
-        username: 'ddddd', email: 'ddddd@ddddd.com', thoughts: [
-            { thoughtText: "thoughtText ddddd", username: 'ddddd', reactions: [] }
-        ]
-    },
-    {
-        username: 'eeeee', email: 'eeeee@eeeee.com', thoughts: [
-            { thoughtText: "thoughtText eeeee", username: 'eeeee', reactions: [] }
-        ]
-    },
-    {
-        username: 'fffff', email: 'fffff@fffff.com', thoughts: [
-            { thoughtText: "thoughtText fffff", username: 'fffff', reactions: [] }
-        ]
-    },
-    {
-        username: 'ggggg', email: 'ggggg@ggggg.com', thoughts: [
-            { thoughtText: "thoughtText ggggg", username: 'ggggg', reactions: [] }
-        ]
-    },
-    {
-        username: 'hhhhh', email: 'hhhhh@hhhhh.com', thoughts: [
-            { thoughtText: "thoughtText hhhhh", username: 'hhhhh', reactions: [] }
-        ]
-    },
-    {
-        username: 'iiiii', email: 'iiiii@iiiii.com', thoughts: [
-            { thoughtText: "thoughtText iiiii", username: 'iiiii', reactions: [] }
-        ]
-    },
-    {
-        username: 'jjjjj', email: 'jjjjj@jjjjj.com', thoughts: [
-            { thoughtText: "thoughtText jjjjj", username: 'jjjjj', reactions: [] }
-        ]
-    },
-    {
-        username: 'kkkkk', email: 'kkkkk@kkkkk.com', thoughts: [
-            { thoughtText: "thoughtText kkkkk", username: 'kkkkk', reactions: [] }
-        ]
-    },
-    {
-        username: 'lllll', email: 'lllll@lllll.com', thoughts: [
-            { thoughtText: "thoughtText lllll", username: 'lllll', reactions: [] }
-        ]
-    },
-    {
-        username: 'mmmmm', email: 'mmmmm@mmmmm.com', thoughts: [
-            { thoughtText: "thoughtText mmmmm", username: 'mmmmm', reactions: [] }
-        ]
-    },
-    {
-        username: 'nnnnn', email: 'nnnnn@nnnnn.com', thoughts: [
-            { thoughtText: "thoughtText nnnnn", username: 'nnnnn', reactions: [] }
-        ]
-    },
-    {
-        username: 'ooooo', email: 'ooooo@ooooo.com', thoughts: [
-            { thoughtText: "thoughtText ooooo", username: 'ooooo', reactions: [] }
-        ]
-    },
-    {
-        username: 'ppppp', email: 'ppppp@ppppp.com', thoughts: [
-            { thoughtText: "thoughtText ppppp", username: 'ppppp', reactions: [] }
-        ]
-    },
-    {
-        username: 'qqqqq', email: 'qqqqq@qqqqq.com', thoughts: [
-            { thoughtText: "thoughtText qqqqq", username: 'qqqqq', reactions: [] }
-        ]
-    },
-    {
-        username: 'rrrrr', email: 'rrrrr@rrrrr.com', thoughts: [
-            { thoughtText: "thoughtText rrrrr", username: 'rrrrr', reactions: [] }
-        ]
-    },
-    {
-        username: 'sssss', email: 'sssss@sssss.com', thoughts: [
-            { thoughtText: "thoughtText sssss", username: 'sssss', reactions: [] }
-        ]
-    },
-    {
-        username: 'ttttt', email: 'ttttt@ttttt.com', thoughts: [
-            { thoughtText: "thoughtText ttttt", username: 'ttttt', reactions: [] }
-        ]
-    },
+"use strict";
+
+const { Types } = require('mongoose');
+const users = [
+	{
+		"_id": Types.ObjectId("628db9a502d1332d3ec76ada"), "username": 'aaaaa', "email": 'aaaaa@aaaaa.com', "thoughts": ["628ecba42bc4c809b9a0e1da"], "friends": ["628db9a502d1332d3ec76adc", "628db9a502d1332d3ec76add", "628db9a502d1332d3ec76ade"], "__v": 0
+	},
+	{
+		"_id": Types.ObjectId("628db9a502d1332d3ec76adb"), "username": 'bbbbb', "email": 'bbbbb@bbbbb.com', "thoughts": ["628ecba42bc4c809b9a0e1db"], "friends": ["628db9a502d1332d3ec76adc", "628db9a502d1332d3ec76add", "628db9a502d1332d3ec76ade"], "__v": 0
+	},
+	{
+		"_id": Types.ObjectId("628db9a502d1332d3ec76adc"), "username": 'ccccc', "email": 'ccccc@ccccc.com', "thoughts": ["628ecba42bc4c809b9a0e1dc"], "friends": ["628db9a502d1332d3ec76ada", "628db9a502d1332d3ec76adb"], "__v": 0
+	},
+	{
+		"_id": Types.ObjectId("628db9a502d1332d3ec76add"), "username": 'ddddd', "email": 'ddddd@ddddd.com', "thoughts": ["628ecba42bc4c809b9a0e1dd"], "friends": ["628db9a502d1332d3ec76ada", "628db9a502d1332d3ec76adb"], "__v": 0
+	},
+	{
+		"_id": Types.ObjectId("628db9a502d1332d3ec76ade"), "username": 'eeeee', "email": 'eeeee@eeeee.com', "thoughts": ["628ecba42bc4c809b9a0e1de"], "friends": ["628db9a502d1332d3ec76ada", "628db9a502d1332d3ec76adb"], "__v": 0
+	}
 ];
 
-const names = [
-    'Aaran',
-    'Aaren',
-    'Aarez',
-    'Aarman',
-    'Aaron',
-    'Aaron-James',
-    'Aarron',
-    'Aaryan',
-    'Aaryn',
-    'Aayan',
-    'Aazaan',
-    'Abaan',
-    'Abbas',
-    'Abdallah',
-    'Abdalroof',
-    'Abdihakim',
-    'Abdirahman',
-    'Abdisalam',
-    'Abdul',
-    'Abdul-Aziz',
-    'Abdulbasir',
-    'Abdulkadir',
-    'Abdulkarem',
-    'Smith',
-    'Jones',
-    'Coollastname',
-    'enter_name_here',
-    'Ze',
-    'Zechariah',
-    'Zeek',
-    'Zeeshan',
-    'Zeid',
-    'Zein',
-    'Zen',
-    'Zendel',
-    'Zenith',
-    'Zennon',
-    'Zeph',
-    'Zerah',
-    'Zhen',
-    'Zhi',
-    'Zhong',
-    'Zhuo',
-    'Zi',
-    'Zidane',
-    'Zijie',
-    'Zinedine',
-    'Zion',
-    'Zishan',
-    'Ziya',
-    'Ziyaan',
-    'Zohaib',
-    'Zohair',
-    'Zoubaeir',
-    'Zubair',
-    'Zubayr',
-    'Zuriel',
-    'Xander',
-    'Jared',
-    'Courtney',
-    'Gillian',
-    'Clark',
-    'Jared',
-    'Grace',
-    'Kelsey',
-    'Tamar',
-    'Alex',
-    'Mark',
-    'Tamar',
-    'Farish',
-    'Sarah',
-    'Nathaniel',
-    'Parker',
+const thoughts = [
+	{ "_id": Types.ObjectId("628ecba42bc4c809b9a0e1da"), "thoughtText": "a thought", "username": "aaaaa", "reactions": [{ "reactionBody": "a total reaction", "username": "bbbbb", "reactionId": "628ec0d89d42406d9dd2ai9b" }, { "reactionBody": "a 2nd total reaction", "username": "ccccc", "reactionId": "628ec0d89d42406d9dd2ai9c" }], "__v": 0 },
+	{ "_id": Types.ObjectId("628ecba42bc4c809b9a0e1db"), "thoughtText": "a 2nd thought", "username": "bbbbb", "reactions": [{ "reactionBody": "another  total reaction", "username": "ccccc", "reactionId": "628ec0d89d42406d9dd2ai9d" }, { "reactionBody": "a 4th total reaction", "username": "ddddd", "reactionId": "628ec0d89d42406d9dd2ai9e" }], "__v": 0 },
+	{ "_id": Types.ObjectId("628ecba42bc4c809b9a0e1dc"), "thoughtText": "a 3rd thought", "username": "ccccc", "reactions": [{ "reactionBody": "a 5th different total reaction", "username": "ddddd", "reactionId": "628ec0d89d42406d9dd2ai9f" }, { "reactionBody": "a 6th total reaction", "username": "eeeee", "reactionId": "628ec0d89d42406d9dd2ai9g" }], "__v": 0 },
+	{ "_id": Types.ObjectId("628ecba42bc4c809b9a0e1dd"), "thoughtText": "a 4th thought", "username": "ddddd", "reactions": [{ "reactionBody": "a 7th total reaction", "username": "eeeee", "reactionId": "628ec0d89d42406d9dd2ai9h" }, { "reactionBody": "a 8th total reaction", "username": "aaaaa", "reactionId": "628ec0d89d42406d9dd2ai9i" }], "__v": 0 },
+	{ "_id": Types.ObjectId("628ecba42bc4c809b9a0e1de"), "thoughtText": "a 5th thought", "username": "eeeee", "reactions": [{ "reactionBody": "a 9th total reaction", "username": "aaaaa", "reactionId": "628ec0d89d42406d9dd2ai9j" }, { "reactionBody": "a 10th total reaction", "username": "bbbbb", "reactionId": "628ec0d89d42406d9dd2ai9k" }], "__v": 0 }
 ];
 
-const appDescriptions = [
-    'Decision Tracker',
-    'Find My Phone',
-    'Learn Piano',
-    'Starbase Defender',
-    'Tower Defense',
-    'Monopoly Money Manager',
-    'Movie trailers',
-    'Hello world',
-    'Stupid Social Media App',
-    'Notes',
-    'Messages',
-    'Email',
-    'Compass',
-    'Firefox',
-    'Running app',
-    'Cooking app',
-    'Poker',
-    'Deliveries',
-];
-
-// Get a random item given an array
-const getRandomArrItem = (arr) => arr[Math.floor(Math.random() * arr.length)];
-
-// Gets a random full name
-const getRandomName = () =>
-    `${getRandomArrItem(names)} ${getRandomArrItem(names)}`;
-
-// Function to generate random assignments that we can add to student object.
-const getRandomAssignments = (int) => {
-    const results = [];
-    for (let i = 0; i < int; i++) {
-        results.push({
-            assignmentName: getRandomArrItem(appDescriptions),
-            score: Math.floor(Math.random() * (99 - 70 + 1) + 70),
-        });
-    }
-    return results;
-};
-
-// Export the functions for use in seed.js
-module.exports = { getRandomName, getRandomAssignments };
+module.exports = { users, thoughts };
