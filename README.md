@@ -36,9 +36,10 @@ npm run start
 
 ## Product
 
-![A screen shot of the E-commerce Back End in use.](./assets/demo.gif)
-[Walkthrough video that demonstrates the functionality](https://watch.screencastify.com/v/B5RZlQL6L1LtQNNXl1ry)
-[A 2nd Walkthrough video that demonstrates more functionality](https://watch.screencastify.com/v/76QJVv7YRPiDtfcl57p5)
+![A screen shot of the api in use.](./assets/demo.gif)
+
+- [Walkthrough video that demonstrates the functionality](https://watch.screencastify.com/v/B5RZlQL6L1LtQNNXl1ry)
+- [A 2nd Walkthrough video that demonstrates more functionality](https://watch.screencastify.com/v/76QJVv7YRPiDtfcl57p5)
 
 ## Questions
 
